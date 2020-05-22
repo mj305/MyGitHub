@@ -4,7 +4,9 @@ import { Link } from 'react-router';
 class User extends React.Component {
     constructor() {
         super();
-        this.state = {};
+        this.state = {
+   
+        };
     }
 
     componentDidMount() {
@@ -14,6 +16,16 @@ class User extends React.Component {
             user => {
                 this.setState({
                     user: user
+                });
+            }
+        );
+
+        fetch(`https://api.github.com/users/${this.props.params.username}/repos`)
+        .then(response => response.json())
+        .then(
+            repos => {
+                this.setState({
+                    repos: repos
                 });
             }
         );
@@ -69,6 +81,10 @@ class User extends React.Component {
                         {stats.map(this.renderStat)}
                     </ul>
                 </div>
+                {this.state.repos.map(repo => {
+                  console.log(repo)
+                  return <div>{repo.id}</div>
+                })}
             </div>
         );
     }
