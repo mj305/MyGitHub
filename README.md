@@ -17,8 +17,6 @@ To avoid bugs and make CSS more readable we should follow some basic naming conv
 
 You can use the return value of the function to prevent the form submission.
 
-\&lt;form name=&quot;myForm&quot; onsubmit=&quot;return validateMyForm();&quot;\&gt;
-
 3.- When and how should HTML code be validated?
 
 You can validate HTML using W3C Markup Validation Service; it&#39;s invaluable tools for spotting mistakes. The recommendation is to validate when developing the template that will become the working web page.
