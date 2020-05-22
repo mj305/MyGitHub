@@ -81,9 +81,9 @@ class User extends React.Component {
                         {stats.map(this.renderStat)}
                     </ul>
                     </div>
-                {this.state.repos.map(repo => {
+                    {this.state.repos.map(repo => {
                   console.log(repo)
-                  return <div>{repo.id}</div>
+                  return <div>{repo.name}</div>
                 })}
             </div>
         );
