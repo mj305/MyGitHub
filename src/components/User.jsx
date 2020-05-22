@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router';
 
+
 const User = (props) => {
   const {username} = props.params;
   const [user, setUser] = useState({});
@@ -34,13 +35,16 @@ const User = (props) => {
                 <p className="user-info__bio">{user.bio}</p>
             </Link>
 
-            {/* <ul className="user-info__stats">
-                {stats.map(this.renderStat)}
-            </ul> */}
+
             </div>
             {repos.map(repo => {
           console.log(repo)
-          return <div>{repo.name}:{repo.html_url}</div>
+
+          return <>
+            <a href={repo.html_url} target="blank"> {repo.name} </a>
+            <br/>
+           </>
+          
         })}
     </div>
 );
