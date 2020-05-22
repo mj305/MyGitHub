@@ -83,7 +83,7 @@ class User extends React.Component {
                     </div>
                     {this.state.repos.map(repo => {
                   console.log(repo)
-                  return <div>{repo.name}</div>
+                  return <div>{repo.name}:{repo.html_url}</div>
                 })}
             </div>
         );
