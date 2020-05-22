@@ -5,7 +5,7 @@ class User extends React.Component {
     constructor() {
         super();
         this.state = {
-   
+        user: []    
         };
     }
 
@@ -15,11 +15,11 @@ class User extends React.Component {
         .then(
             user => {
                 this.setState({
-                    user: user
+                    user: [user]
                 });
             }
         );
-
+        
         fetch(`https://api.github.com/users/${this.props.params.username}/repos`)
         .then(response => response.json())
         .then(
@@ -30,9 +30,9 @@ class User extends React.Component {
             }
         );
     }
-
-  
+    
     renderStat(stat) {
+        console.log(stat);
         return (
             <li key={stat.name} className="user-info__stat">
                 <Link to={stat.url}>
@@ -44,6 +44,7 @@ class User extends React.Component {
     }
 
     render() {
+        
         if (!this.state.user) {
             return (<div className="user-page">LOADING...</div>);
         }
@@ -67,6 +68,8 @@ class User extends React.Component {
                 url: `/user/${this.props.params.username}/following`
             }
         ];
+
+        console.log(this.state.user);
 
         return (
             <div className="user-page">
