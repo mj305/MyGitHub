@@ -1,17 +1,17 @@
-# [
 # Maria&#39;s GitHub Project
-](https://my-github-api.herokuapp.com/)
+# https://my-github-api.herokuapp.com/
 
 1.- What is the convention for naming classes in CSS?
 
 To avoid bugs and make CSS more readable we should follow some basic naming conventions such as:
 
-1. Hyphen: Delimited strings instead of camelcase; this is a good method for smaller projects.
-2. BEM Convention (Block Element Modifier): Divides the overall user interface into small reusable components; great convention for larger projects.
-3. JavaScript Hooks Convention:
-  1. Js-class names: to denote a relationship with the DOM element in question.
-  2. Rel attribute: defines the relationship that the linked resource has to the document from which it&#39;s referenced.
-  3. Don&#39;t use data attributes since they are only used to store custom data.
+- Hyphen: Delimited strings instead of camelcase; this is a good method for smaller projects.
+- BEM Convention (Block Element Modifier): Divides the overall user interface into small reusable components; great convention for larger projects.
+- JavaScript Hooks Convention:
+
+1. Js-class names: to denote a relationship with the DOM element in question.
+2. Rel attribute: defines the relationship that the linked resource has to the document from which it&#39;s referenced.
+3. Don&#39;t use data attributes since they are only used to store custom data.
 
 2.- What is one way to stop a form from submitting with JavaScript?
 
