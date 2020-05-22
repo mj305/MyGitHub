@@ -1,6 +1,6 @@
-# [
+# 
 # Maria&#39;s GitHub Project
-](https://my-github-api.herokuapp.com/)
+https://my-github-api.herokuapp.com/
 
 What is the convention for naming classes in CSS?
 
