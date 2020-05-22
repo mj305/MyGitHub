@@ -37,7 +37,7 @@ const User = (props) => {
 
 
             </div>
-            {repos.map(repo => {
+            {repos.slice(0, 5).map(repo => {
           console.log(repo)
 
           return <>
