@@ -11,9 +11,6 @@
 - The API Website: https://developer.github.com/v3/
 - Sign up with your email.
 
-## Clone Repo
-- git clone git@github.com:mj305/MyGitHub.git
-
 
 ## Setup To Start React App
 - React: https://reactjs.org/docs/create-a-new-react-app.html
