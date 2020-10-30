@@ -14,9 +14,14 @@
 
 ## Setup To Start React App
 - React: https://reactjs.org/docs/create-a-new-react-app.html
-- npx create-react-app my-app
-- cd my-app
-- npm install
-- npm start
+```
+npx create-react-app my-app
+cd my-app
+npm install
+npm start
+```
 - Open http://localhost:3000 to view in the browser.
+
+
+
 
